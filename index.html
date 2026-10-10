@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Política de privacidad de Findy, una aplicación de Ashsignal."
+    >
+    <meta name="color-scheme" content="light dark">
+    <link
+      rel="canonical"
+      href="https://ashsignal.github.io/findy-privacy/"
+    >
+    <title>Política de privacidad de Findy | Ashsignal</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --accent: #ffc928;
+        --accent-soft: #fff3bf;
+        --background: #f7f7f8;
+        --surface: #ffffff;
+        --text: #111923;
+        --muted: #5d6874;
+        --outline: #c8cdd3;
+        --max-width: 760px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--text);
+        text-decoration-color: #b27d00;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 3px;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration-color: var(--text);
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 4px;
+      }
+
+      .site-header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--outline);
+      }
+
+      .header-inner,
+      main,
+      .footer-inner {
+        width: min(calc(100% - 32px), var(--max-width));
+        margin-inline: auto;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 76px;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .brand img {
+        display: block;
+        width: 126px;
+        height: auto;
+      }
+
+      .language-nav {
+        display: flex;
+        gap: 16px;
+        font-size: 0.9375rem;
+        font-weight: 650;
+      }
+
+      main {
+        padding-block: 48px 72px;
+      }
+
+      .intro {
+        border-left: 6px solid var(--accent);
+        padding-left: 20px;
+        margin-bottom: 40px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 7vw, 3rem);
+      }
+
+      h2 {
+        margin: 48px 0 20px;
+        padding-top: 24px;
+        border-top: 1px solid var(--outline);
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        margin: 32px 0 8px;
+        font-size: 1.15rem;
+      }
+
+      p,
+      ul {
+        margin-block: 0 16px;
+      }
+
+      ul {
+        padding-left: 24px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .updated {
+        color: var(--muted);
+        font-size: 0.9375rem;
+      }
+
+      .summary {
+        font-size: 1.08rem;
+      }
+
+      .notice {
+        margin-block: 28px;
+        padding: 18px 20px;
+        background: var(--accent-soft);
+        border: 1px solid #e4bd35;
+        border-radius: 8px;
+      }
+
+      .notice p:last-child {
+        margin-bottom: 0;
+      }
+
+      .site-footer {
+        background: var(--surface);
+        border-top: 1px solid var(--outline);
+      }
+
+      .footer-inner {
+        padding-block: 28px;
+        color: var(--muted);
+        font-size: 0.9375rem;
+      }
+
+      .footer-inner p {
+        margin: 0;
+      }
+
+      @media (max-width: 520px) {
+        .header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: center;
+          gap: 8px;
+          padding-block: 14px;
+        }
+
+        main {
+          padding-block: 36px 56px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --accent: #ffd54f;
+          --accent-soft: #463a12;
+          --background: #101317;
+          --surface: #191e24;
+          --text: #f7f8fa;
+          --muted: #b4bac2;
+          --outline: #424b55;
+        }
+
+        .brand img {
+          filter: invert(1) hue-rotate(180deg);
+        }
+
+        .notice {
+          border-color: #7a641d;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Findy">
+          <img src="findy_logo.svg" alt="Findy">
+        </a>
+        <nav class="language-nav" aria-label="Idioma / Language">
+          <a href="#es">Español</a>
+          <a href="#en" lang="en">English</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <article id="es" lang="es" aria-labelledby="titulo-es">
+        <header class="intro">
+          <h1 id="titulo-es">Política de privacidad</h1>
+          <p class="updated">Última actualización: 10 de octubre de 2026</p>
+          <p class="summary">
+            Findy es una aplicación de Ashsignal diseñada para funcionar de
+            manera local. No requiere una cuenta y no envía tus objetos, fotos
+            ni ubicaciones a servidores de Ashsignal.
+          </p>
+        </header>
+
+        <h3>Responsable</h3>
+        <p>
+          Ashsignal es responsable de Findy. Para consultas relacionadas con
+          privacidad, puedes escribir a
+          <a href="mailto:ashsignal.studio@gmail.com"
+            >ashsignal.studio@gmail.com</a
+          >.
+        </p>
+
+        <h3>Información que almacena Findy</h3>
+        <p>
+          La aplicación permite que ingreses y administres información para
+          recordar dónde están tus objetos. Según las funciones que uses, esta
+          información puede incluir:
+        </p>
+        <ul>
+          <li>
+            Nombres, lugares, descripciones, etiquetas y estado de favorito de
+            los objetos.
+          </li>
+          <li>
+            Fotografías opcionales de los objetos y de sus ubicaciones.
+          </li>
+          <li>
+            Fechas de creación y actualización e historial de ubicaciones.
+          </li>
+          <li>
+            Información de préstamos, como el nombre que ingreses para la
+            persona que tiene el objeto y la fecha prevista de devolución.
+          </li>
+          <li>
+            Preferencias de la aplicación, como idioma, tema, visualización y
+            estado de las guías iniciales.
+          </li>
+        </ul>
+        <p>
+          Esta información se guarda en el espacio privado de Findy en tu
+          dispositivo. Ashsignal no la recibe, no la vende y no la utiliza
+          para crear perfiles. Los lugares escritos en Findy son texto que tú
+          proporcionas; la aplicación no recopila tu ubicación GPS.
+        </p>
+
+        <h3>Cómo utiliza Findy la información</h3>
+        <p>Findy utiliza la información local únicamente para:</p>
+        <ul>
+          <li>Crear, mostrar, buscar, organizar y editar tus objetos.</li>
+          <li>Mostrar ubicaciones e historial de movimientos.</li>
+          <li>Registrar préstamos y fechas de devolución.</li>
+          <li>Crear archivos, tarjetas visuales y respaldos cuando lo solicites.</li>
+        </ul>
+
+        <h3>Cámara y fotografías</h3>
+        <p>
+          Findy usa la cámara o el selector de fotografías del sistema solo
+          después de que eliges agregar o cambiar una foto. Las copias que la
+          aplicación administra se redimensionan y se eliminan sus metadatos
+          EXIF, incluida la información de ubicación que pudiera contener la
+          imagen. Agregar fotografías es opcional.
+        </p>
+
+        <h3>Compartir información</h3>
+        <p>
+          Findy no comparte información automáticamente. Cuando eliges
+          compartir un objeto, la aplicación puede crear:
+        </p>
+        <ul>
+          <li>
+            Una tarjeta visual con el nombre, la ubicación guardada o la persona
+            a quien se prestó, la fecha y una foto opcional.
+          </li>
+          <li>
+            Un archivo <code>.findyitem</code> con el nombre, la ubicación y
+            una foto opcional. No incluye la descripción, las etiquetas, el
+            favorito, el préstamo ni el historial.
+          </li>
+        </ul>
+        <p>
+          El sistema operativo muestra las aplicaciones disponibles y tú
+          eliges el destinatario y el servicio de terceros que recibirá el
+          contenido. El tratamiento posterior depende del servicio que hayas
+          seleccionado y de su propia política de privacidad. Ashsignal no
+          recibe una copia del contenido compartido.
+        </p>
+
+        <h3>Respaldos</h3>
+        <p>
+          Findy crea un respaldo únicamente cuando lo solicitas. El archivo
+          puede contener información de tus objetos y fotografías y no está
+          cifrado en esta versión. Tú decides dónde guardarlo o con quién
+          compartirlo. Los archivos exportados quedan bajo tu control y pueden
+          permanecer fuera de Findy hasta que los elimines.
+        </p>
+
+        <h3>Servicios de terceros</h3>
+        <p>
+          Findy no incluye publicidad, analítica, seguimiento, inicio de sesión
+          ni sincronización en la nube. La aplicación interactúa con funciones
+          del sistema operativo, como la cámara, el selector de fotos, el
+          selector de archivos y el menú para compartir, solo cuando utilizas
+          esas funciones.
+        </p>
+
+        <h3>Conservación, eliminación y seguridad</h3>
+        <p>
+          La información permanece en tu dispositivo hasta que la edites, la
+          elimines o desinstales Findy, de acuerdo con las reglas de Android o
+          iOS. Puedes eliminar objetos desde la aplicación. Desinstalar Findy
+          elimina sus datos privados locales, pero no elimina respaldos ni
+          archivos que hayas guardado o compartido fuera de ella.
+        </p>
+        <p>
+          Findy usa el almacenamiento privado proporcionado por el sistema
+          operativo. Ningún método de almacenamiento es infalible; protege el
+          acceso a tu dispositivo y conserva los respaldos en un lugar seguro.
+        </p>
+
+        <h3>Privacidad de menores</h3>
+        <p>
+          Findy es una herramienta de organización general y no está dirigida
+          específicamente a menores de 13 años. Como Ashsignal no opera un
+          servidor para Findy, no recopila deliberadamente información personal
+          de menores mediante la aplicación.
+        </p>
+
+        <h3>Cambios en esta política</h3>
+        <p>
+          Podemos actualizar esta política cuando cambien las funciones o los
+          requisitos legales. Publicaremos la versión vigente en esta página e
+          indicaremos la fecha de la última actualización.
+        </p>
+
+        <div class="notice">
+          <p>
+            <strong>Contacto:</strong>
+            <a href="mailto:ashsignal.studio@gmail.com"
+              >ashsignal.studio@gmail.com</a
+            >
+          </p>
+        </div>
+      </article>
+
+      <article id="en" lang="en" aria-labelledby="title-en">
+        <header class="intro">
+          <h2 id="title-en">Privacy policy</h2>
+          <p class="updated">Last updated: October 10, 2026</p>
+          <p class="summary">
+            Findy is an Ashsignal application designed to work locally. It does
+            not require an account and does not send your objects, photos, or
+            locations to Ashsignal servers.
+          </p>
+        </header>
+
+        <h3>Data controller</h3>
+        <p>
+          Ashsignal is responsible for Findy. For privacy questions, contact
+          <a href="mailto:ashsignal.studio@gmail.com"
+            >ashsignal.studio@gmail.com</a
+          >.
+        </p>
+
+        <h3>Information stored by Findy</h3>
+        <p>
+          The app lets you enter and manage information to remember where your
+          objects are. Depending on the features you use, this may include:
+        </p>
+        <ul>
+          <li>Object names, places, descriptions, tags, and favorite status.</li>
+          <li>Optional photos of objects and their locations.</li>
+          <li>Creation and update dates and location history.</li>
+          <li>
+            Loan information, such as the name you enter for the person who has
+            an object and its expected return date.
+          </li>
+          <li>
+            App preferences such as language, theme, view mode, and onboarding
+            status.
+          </li>
+        </ul>
+        <p>
+          This information is stored in Findy's private space on your device.
+          Ashsignal does not receive it, sell it, or use it to create profiles.
+          Places entered in Findy are text you provide; the app does not collect
+          your GPS location.
+        </p>
+
+        <h3>How Findy uses information</h3>
+        <p>Findy uses local information only to:</p>
+        <ul>
+          <li>Create, display, search, organize, and edit your objects.</li>
+          <li>Display places and movement history.</li>
+          <li>Record loans and expected return dates.</li>
+          <li>Create files, visual cards, and backups when you request them.</li>
+        </ul>
+
+        <h3>Camera and photos</h3>
+        <p>
+          Findy uses the camera or system photo picker only after you choose to
+          add or change a photo. Copies managed by the app are resized and their
+          EXIF metadata, including any embedded location information, is
+          removed. Adding photos is optional.
+        </p>
+
+        <h3>Sharing information</h3>
+        <p>
+          Findy does not share information automatically. When you choose to
+          share an object, the app can create:
+        </p>
+        <ul>
+          <li>
+            A visual card containing the name, stored place or borrower, date,
+            and an optional photo.
+          </li>
+          <li>
+            A <code>.findyitem</code> file containing the name, place, and an
+            optional photo. It does not include the description, tags, favorite
+            status, loan information, or history.
+          </li>
+        </ul>
+        <p>
+          The operating system displays the available apps, and you choose the
+          recipient and third-party service that receives the content. Further
+          processing is governed by the selected service's privacy policy.
+          Ashsignal does not receive a copy of shared content.
+        </p>
+
+        <h3>Backups</h3>
+        <p>
+          Findy creates a backup only when you request one. It may contain
+          object information and photos and is not encrypted in this version.
+          You choose where to save it or whom to share it with. Exported files
+          remain under your control and may remain outside Findy until you
+          delete them.
+        </p>
+
+        <h3>Third-party services</h3>
+        <p>
+          Findy does not include advertising, analytics, tracking, sign-in, or
+          cloud synchronization. The app interacts with operating-system
+          features such as the camera, photo picker, file picker, and sharing
+          menu only when you use those features.
+        </p>
+
+        <h3>Retention, deletion, and security</h3>
+        <p>
+          Information remains on your device until you edit it, delete it, or
+          uninstall Findy, subject to Android or iOS rules. You can delete
+          objects inside the app. Uninstalling Findy removes its private local
+          data but does not delete backups or files you saved or shared outside
+          the app.
+        </p>
+        <p>
+          Findy uses private storage provided by the operating system. No
+          storage method is infallible; protect access to your device and keep
+          backups in a secure place.
+        </p>
+
+        <h3>Children's privacy</h3>
+        <p>
+          Findy is a general organization tool and is not specifically directed
+          to children under 13. Because Ashsignal does not operate a server for
+          Findy, it does not knowingly collect children's personal information
+          through the app.
+        </p>
+
+        <h3>Changes to this policy</h3>
+        <p>
+          We may update this policy when features or legal requirements change.
+          We will publish the current version on this page and show the date of
+          the latest update.
+        </p>
+
+        <div class="notice">
+          <p>
+            <strong>Contact:</strong>
+            <a href="mailto:ashsignal.studio@gmail.com"
+              >ashsignal.studio@gmail.com</a
+            >
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 Ashsignal · Findy</p>
+      </div>
+    </footer>
+  </body>
+</html>
